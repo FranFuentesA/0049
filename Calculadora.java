@@ -36,4 +36,24 @@ public class Calculadora
             contador= contador + 1;
         }
     }
+    
+    /**
+     *  Metodo que suma los numeros (ellos incluidos) entre 0 y 10.
+     */
+    public void sumValues()
+    {
+        // Creo dos variables locales
+        int valor = 0;
+
+        int contador = 0;
+
+        while (contador <= 10)
+        {
+            valor = valor + contador;
+            contador = contador + 1;
+        }
+
+        System.out.println("El resultado de sumar todos los numeros entre el 0 y el 10 es: " + valor);
+
+    }
 }
