@@ -56,4 +56,45 @@ public class Calculadora
         System.out.println("El resultado de sumar todos los numeros entre el 0 y el 10 es: " + valor);
 
     }
+    
+    /**
+     *  Metodo que suma dos numeros (num1 y num2) y muestra sa suma entre esos dos numeros
+     */
+    public int sumValuesInterval(int num1, int num2)
+    {
+        // Creo variables locales para el contador y dos mas para intercambiar valores 
+        int contador = 0;
+
+        int acumulador = 0;
+
+        int cambio1 = num1;
+
+        int cambio2 = num2;
+
+
+        if (cambio1 >= 0 && cambio2 >= 0) {
+            
+            if (cambio2 > cambio1) {
+                cambio2 = num1;
+                cambio1 = num2;
+            }
+            
+            while (contador <= cambio1) {
+
+                acumulador = acumulador + contador; 
+                contador = contador + 1;
+            
+            }
+            
+        } else { 
+
+            System.out.println("Error deben se valores positivos");
+
+            acumulador = -1;
+
+        }
+
+        return acumulador;
+
+    }
 }
