@@ -7,13 +7,13 @@
  */
 public class Calculadora
 {
-    
+
     /**
      * Constructor for objects of class Calculadora
      */
     public Calculadora()
     {
-        
+
     }
 
     /**
@@ -23,9 +23,9 @@ public class Calculadora
     {
         //Creo dos variables locales.
         int multiplo = 5;
-        
+
         int contador = 0;  
-        
+
         while  ((multiplo * contador) < 95)
         {
             if (multiplo * contador > 10)
@@ -36,7 +36,7 @@ public class Calculadora
             contador= contador + 1;
         }
     }
-    
+
     /**
      *  Metodo que suma los numeros (ellos incluidos) entre 0 y 10.
      */
@@ -56,7 +56,7 @@ public class Calculadora
         System.out.println("El resultado de sumar todos los numeros entre el 0 y el 10 es: " + valor);
 
     }
-    
+
     /**
      *  Metodo que suma dos numeros (num1 y num2) y muestra sa suma entre esos dos numeros
      */
@@ -71,21 +71,19 @@ public class Calculadora
 
         int cambio2 = num2;
 
-
         if (cambio1 >= 0 && cambio2 >= 0) {
-            
             if (cambio2 > cambio1) {
                 cambio2 = num1;
                 cambio1 = num2;
             }
-            
+
             while (contador <= cambio1) {
 
                 acumulador = acumulador + contador; 
                 contador = contador + 1;
-            
+
             }
-            
+
         } else { 
 
             System.out.println("Error deben se valores positivos");
@@ -97,4 +95,27 @@ public class Calculadora
         return acumulador;
 
     }
+
+    /**
+     *
+     */
+    public boolean isPrime(int n) {
+
+        boolean esPrimo = true;
+        
+        int contador = 2;
+
+        while (esPrimo && (contador < n)) {
+            
+            if (n % contador == 0) {
+             
+                esPrimo= false;
+            
+            }
+            contador++;
+        }
+        
+        return esPrimo;
+    }
+
 }
