@@ -17,7 +17,7 @@ public class Test
     }
 
     /**
-     * 
+     *  Metodo que testea el metodo  SumValuesInterval() de la clase Calculadora
      */
     public void testSumValuesInterval()
     {
@@ -74,7 +74,7 @@ public class Test
     }
 
     /**
-     *
+     * Metodo que testea el metodo  IsPrime() de la clase Calculadora
      */
     public void testIsPrime()
     {
@@ -106,7 +106,7 @@ public class Test
 
         }
 
-        if (calculador1.isPrime(-5) == true)   {
+        if (calculador1.isPrime(18) == true)   {
 
             System.out.println("Comprobando isPrime(-5)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
@@ -128,7 +128,7 @@ public class Test
 
         }
 
-        if (calculador1.isPrime(0) == true)   {
+        if (calculador1.isPrime(12) == true)   {
 
             System.out.println("Comprobando isPrime(0)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
