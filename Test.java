@@ -51,7 +51,7 @@ public class Test
 
         } 
 
-        if (calculador1.sumValuesInterval(2,8) == -1 ) {
+        if (calculador1.sumValuesInterval(2,8) == 36 ) {
 
             System.out.println("Comprobando sumValuesInterval(1,4)...  valores incorrectos -1 / resultado metodo " + calculador1.sumValuesInterval(2,8) + "... ERROR" ) ;       
 
@@ -61,7 +61,7 @@ public class Test
 
         }    
 
-        if (calculador1.sumValuesInterval(20,500) == -1 ) {
+        if (calculador1.sumValuesInterval(20,500) == 125250 ) {
 
             System.out.println("Comprobando sumValuesInterval(1,4)...  valores incorrectos -1 / resultado metodo " + calculador1.sumValuesInterval(20,500) + "... ERROR" ) ;       
 
@@ -85,55 +85,51 @@ public class Test
         String correcto = "Si";
 
         if (calculador1.isPrime(7) == true)   {
-
+             resultado = "ERROR";
             System.out.println("Comprobando isPrime(7)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
             isPrime = false;
-            resultado = "ERROR";
             correcto = "no";
             System.out.println("Comprobando isPrime(7)... resultado incorrecto " +  isPrime   + " / resultado metodo false... " + resultado);
 
         }
 
         if (calculador1.isPrime(4) == true)   {
-
+            resultado = "ERROR";
             System.out.println("Comprobando isPrime(4)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
             isPrime = false;
-            resultado = "ERROR";
+           
             correcto = "no";
             System.out.println("Comprobando isPrime(4)... resultado incorrecto " +  isPrime   + " / resultado metodo false... " + resultado);
 
         }
 
         if (calculador1.isPrime(18) == true)   {
-
+             resultado = "ERROR";
             System.out.println("Comprobando isPrime(-5)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
-            isPrime = false;
-            resultado = "ERROR";
+            isPrime = false;            
             correcto = "no";
             System.out.println("Comprobando isPrime(-5)... resultado incorrecto " +  isPrime   + " / resultado metodo false... " + resultado);
 
         }
 
         if (calculador1.isPrime(20) == true)   {
-
+             resultado = "ERROR";
             System.out.println("Comprobando isPrime(20)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
-            isPrime = false;
-            resultado = "ERROR";
+            isPrime = false;            
             correcto = "no";
             System.out.println("Comprobando isPrime(20)... resultado incorrecto " +  isPrime   + " / resultado metodo false... " + resultado);
 
         }
 
         if (calculador1.isPrime(12) == true)   {
-
+             resultado = "ERROR";
             System.out.println("Comprobando isPrime(0)... resultado correcto " +  isPrime   + " / resultado metodo true... " + resultado);
         } else {
-            isPrime = false;
-            resultado = "ERROR";
+            isPrime = false;            
             correcto = "no";
             System.out.println("Comprobando isPrime(0)... resultado incorrecto " +  isPrime   + " / resultado metodo false... " + resultado);
 
@@ -144,8 +140,8 @@ public class Test
             System.out.println("el metodo " + correcto + " funciona correctamente ");
 
         }  else {
-            
-             System.out.println("el metodo " + correcto + " funciona correctamente ");
+
+            System.out.println("el metodo " + correcto + " funciona correctamente ");
         }    
 
     }
